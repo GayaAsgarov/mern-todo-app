@@ -9,6 +9,7 @@ const TodoSchema = new mongoose.Schema(
       type: String,
       enum: Object.values(TODO_PRIORITY),
     },
+    isDone: Boolean,
   },
   { timestamps: true }
 );
